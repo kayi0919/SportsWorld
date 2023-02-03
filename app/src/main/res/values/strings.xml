@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">SportsWorld</string>
+    <string name="start">START</string>
+    <string name="remember_me">remember me</string>
+    <string name="forgot_password">forgot password?</string>
+    <string name="create_account">create account</string>
+    <string name="login">Login</string>
+    <string name="or">or</string>
+    <string name="password">PASSWORD</string>
+    <string name="username">USERNAME</string>
+    <string name="newsbutton">newsbutton</string>
+    <string name="home">home</string>
+    <string name="tku">tku</string>
+    <string name="sport">sport</string>
+    <string name="profile">profile</string>
+    <string name="check_password">CHECK PASSWORD</string>
+    <string name="go">Go</string>
+    <string name="news">news</string>
+    <string name="cancel">取消</string>
+    <string name="確定">確定</string>
+    <string name="報修">報修</string>
+    <string name="tku_15">tku_15</string>
+    <string name="sports">sports</string>
+</resources>

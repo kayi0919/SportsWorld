@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".news"
+    android:background="#d1b06b">
+
+    <ImageView
+        android:id="@+id/news_1"
+        android:layout_width="59dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/news_1" />
+
+    <ImageView
+        android:id="@+id/news_7"
+        android:layout_width="211dp"
+        android:layout_height="269dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/news_7" />
+
+    <ImageView
+        android:id="@+id/news_8_1"
+        android:layout_width="178dp"
+        android:layout_height="136dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="344dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/news_8" />
+
+    <ImageView
+        android:id="@+id/news_8_2"
+        android:layout_width="178dp"
+        android:layout_height="136dp"
+        android:layout_marginStart="216dp"
+        android:layout_marginTop="480dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/news_8"/>
+
+    <ImageView
+        android:id="@+id/news_8_3"
+        android:layout_width="178dp"
+        android:layout_height="136dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="484dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/news_8" />
+
+    <ImageView
+        android:id="@+id/news_8_4"
+        android:layout_width="178dp"
+        android:layout_height="136dp"
+        android:layout_marginStart="216dp"
+        android:layout_marginTop="344dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/news_8" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_alignParentBottom="true"
+            android:background="#242424"
+            tools:ignore="MissingConstraints">
+
+            <ImageButton
+                android:id="@+id/home"
+                android:layout_width="84dp"
+                android:layout_height="wrap_content"
+                android:background="#242424"
+                android:contentDescription="@string/home"
+                app:srcCompat="@drawable/news_3" />
+
+            <ImageButton
+                android:id="@+id/news"
+                android:layout_width="77dp"
+                android:layout_height="59dp"
+                android:background="#d1b06b"
+                android:contentDescription="@string/news"
+                app:srcCompat="@drawable/news_2" />
+
+            <ImageButton
+                android:id="@+id/tku"
+                android:layout_width="84dp"
+                android:layout_height="59dp"
+                android:background="#242424"
+                android:contentDescription="@string/tku"
+                app:srcCompat="@drawable/news_4" />
+
+            <ImageButton
+                android:id="@+id/sport"
+                android:layout_width="79dp"
+                android:layout_height="66dp"
+                android:background="#242424"
+                android:contentDescription="@string/sport"
+                app:srcCompat="@drawable/news_5" />
+
+            <ImageButton
+                android:id="@+id/profile"
+                android:layout_width="75dp"
+                android:layout_height="63dp"
+                android:background="#242424"
+                android:contentDescription="@string/profile"
+                app:srcCompat="@drawable/news_6" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home"
+    android:background="#d1b06b">
+
+    <ImageView
+        android:id="@+id/home_1"
+        android:layout_width="59dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/home_1" />
+
+    <ImageView
+        android:id="@+id/home_2"
+        android:layout_width="328dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="104dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/home_2" />
+
+    <ImageView
+        android:id="@+id/home_3"
+        android:layout_width="189dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home_2"
+        app:srcCompat="@drawable/home_3" />
+
+    <ImageView
+        android:id="@+id/home_4"
+        android:layout_width="107dp"
+        android:layout_height="131dp"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home_2"
+        app:srcCompat="@drawable/home_4" />
+
+    <ImageView
+        android:id="@+id/home_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="360dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/home_5" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_alignParentBottom="true"
+            android:background="#242424"
+            tools:ignore="MissingConstraints">
+
+            <ImageButton
+                android:id="@+id/home"
+                android:layout_width="84dp"
+                android:layout_height="wrap_content"
+                android:background="#d1b06b"
+                android:contentDescription="@string/home"
+                app:srcCompat="@drawable/home_6"  />
+
+            <ImageButton
+                android:id="@+id/news"
+                android:layout_width="77dp"
+                android:layout_height="59dp"
+                android:background="#242424"
+                android:contentDescription="@string/news"
+                app:srcCompat="@drawable/home_7" />
+
+            <ImageButton
+                android:id="@+id/tku"
+                android:layout_width="84dp"
+                android:layout_height="59dp"
+                android:background="#242424"
+                android:contentDescription="@string/tku"
+                app:srcCompat="@drawable/home_8"  />
+
+            <ImageButton
+                android:id="@+id/sport"
+                android:layout_width="79dp"
+                android:layout_height="66dp"
+                android:background="#242424"
+                android:contentDescription="@string/sport"
+                app:srcCompat="@drawable/home_9" />
+
+            <ImageButton
+                android:id="@+id/profile"
+                android:layout_width="75dp"
+                android:layout_height="63dp"
+                android:background="#242424"
+                android:contentDescription="@string/profile"
+                app:srcCompat="@drawable/home_10" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

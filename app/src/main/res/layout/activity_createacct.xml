@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".createacct"
+    android:background="#c89427">
+
+    <EditText
+        android:id="@+id/editUserName"
+        android:layout_width="214dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="45dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/username"
+        android:inputType="textPersonName"
+        android:textColorHint="#757575"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createacct_1" />
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="214dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="30dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/password"
+        android:textColorHint="#757575"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editUserName" />
+
+    <EditText
+        android:id="@+id/editPassword2"
+        android:layout_width="214dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="30dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/check_password"
+        android:textColorHint="#757575"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editPassword" />
+
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="102dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/remember_me"
+        android:textColor="#311B92"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editPassword2" />
+
+    <ImageView
+        android:id="@+id/createacct_1"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="162dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/createacct_1" />
+
+    <ImageView
+        android:id="@+id/createacct_2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/editUserName"
+        app:layout_constraintEnd_toEndOf="@+id/editUserName"
+        app:layout_constraintHorizontal_bias="0.036"
+        app:layout_constraintStart_toStartOf="@+id/editUserName"
+        app:layout_constraintTop_toTopOf="@+id/editUserName"
+        app:layout_constraintVertical_bias="0.533"
+        app:srcCompat="@drawable/createacct_2" />
+
+    <ImageView
+        android:id="@+id/createacct_3"
+        android:layout_width="20dp"
+        android:layout_height="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/editPassword"
+        app:layout_constraintEnd_toEndOf="@+id/editPassword"
+        app:layout_constraintHorizontal_bias="0.036"
+        app:layout_constraintStart_toStartOf="@+id/editPassword"
+        app:layout_constraintTop_toTopOf="@+id/editPassword"
+        app:layout_constraintVertical_bias="0.55"
+        app:srcCompat="@drawable/createacct_3" />
+
+    <ImageView
+        android:id="@+id/createacct_4"
+        android:layout_width="20dp"
+        android:layout_height="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/editPassword2"
+        app:layout_constraintEnd_toEndOf="@+id/editPassword2"
+        app:layout_constraintHorizontal_bias="0.036"
+        app:layout_constraintStart_toStartOf="@+id/editPassword2"
+        app:layout_constraintTop_toTopOf="@+id/editPassword2"
+        app:layout_constraintVertical_bias="0.55"
+        app:srcCompat="@drawable/createacct_3" />
+
+    <Button
+        android:id="@+id/button_Go"
+        android:layout_width="162dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="524dp"
+        android:background="@drawable/button_d1b06b"
+        android:text="@string/go"
+        android:textColor="#37474F"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c89427">
+
+    <ImageView
+        android:id="@+id/login_1"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="144dp"
+        android:layout_marginEnd="162dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/createacct_1" />
+
+    <EditText
+        android:id="@+id/editUserName"
+        android:layout_width="214dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/username"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_1" />
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="214dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="24dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editUserName" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="196dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/or"
+        android:textColor="#ffffff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_login" />
+
+    <ImageView
+        android:id="@+id/createacct_2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/editUserName"
+        app:layout_constraintEnd_toEndOf="@+id/editUserName"
+        app:layout_constraintHorizontal_bias="0.036"
+        app:layout_constraintStart_toStartOf="@+id/editUserName"
+        app:layout_constraintTop_toTopOf="@+id/editUserName"
+        app:layout_constraintVertical_bias="0.533"
+        app:srcCompat="@drawable/createacct_2" />
+
+    <ImageView
+        android:id="@+id/createacct_3"
+        android:layout_width="20dp"
+        android:layout_height="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/editPassword"
+        app:layout_constraintEnd_toEndOf="@+id/editPassword"
+        app:layout_constraintHorizontal_bias="0.036"
+        app:layout_constraintStart_toStartOf="@+id/editPassword"
+        app:layout_constraintTop_toTopOf="@+id/editPassword"
+        app:layout_constraintVertical_bias="0.55"
+        app:srcCompat="@drawable/createacct_3" />
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="162dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="452dp"
+        android:background="@drawable/button_d1b06b"
+        android:text="@string/login"
+        android:textColor="#ffffff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_createacct"
+        android:layout_width="162dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_d1b06b"
+        android:text="@string/create_account"
+        android:textColor="#ffffff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"/>
+
+    <Button
+        android:id="@+id/button_forgotpw"
+        android:layout_width="102dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="100dp"
+        android:background="@null"
+        android:text="@string/forgot_password"
+        android:textColor="#ffffff"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editPassword" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="102dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/remember_me"
+        android:textColor="#ffffff"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editPassword" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

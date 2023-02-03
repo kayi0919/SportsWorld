@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TKU"
+    android:background="#d1b06b">
+
+    <ImageView
+        android:id="@+id/tku_1"
+        android:layout_width="59dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tku_1" />
+
+    <ImageView
+        android:id="@+id/tku_7"
+        android:layout_width="236dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="72dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tku_7" />
+
+    <ImageView
+        android:id="@+id/tku_8"
+        android:layout_width="94dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="160dp"
+        app:layout_constraintEnd_toStartOf="@+id/tku_9"
+        app:layout_constraintHorizontal_bias="0.583"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tku_8" />
+
+    <ImageView
+        android:id="@+id/tku_9"
+        android:layout_width="94dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="160dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tku_9" />
+
+    <ImageView
+        android:id="@+id/tku_10"
+        android:layout_width="94dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="53dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tku_9"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tku_10" />
+
+    <ImageView
+        android:id="@+id/tku_11"
+        android:layout_width="94dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="252dp"
+        app:layout_constraintEnd_toStartOf="@+id/tku_9"
+        app:layout_constraintHorizontal_bias="0.583"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tku_11" />
+
+    <ImageView
+        android:id="@+id/tku_12"
+        android:layout_width="94dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="252dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tku_12" />
+
+    <ImageView
+        android:id="@+id/tku_13"
+        android:layout_width="94dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="252dp"
+        android:layout_marginEnd="53dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.583"
+        app:layout_constraintStart_toEndOf="@+id/tku_9"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tku_13" />
+
+    <ImageView
+        android:id="@+id/tku_14"
+        android:layout_width="294dp"
+        android:layout_height="178dp"
+        android:layout_marginTop="348dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tku_14" />
+
+    <ImageButton
+        android:id="@+id/tku_15"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="354dp"
+        android:contentDescription="@string/tku_15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tku_15" />
+
+    <Button
+        android:id="@+id/報修"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="548dp"
+        android:background="@drawable/button_c89427"
+        android:text="@string/報修"
+        app:layout_constraintEnd_toStartOf="@+id/確定"
+        app:layout_constraintHorizontal_bias="0.767"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/確定"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="548dp"
+        android:background="@drawable/button_c89427"
+        android:text="@string/確定"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/取消"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="548dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/button_c89427"
+        android:text="@string/cancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toEndOf="@+id/確定"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_alignParentBottom="true"
+            android:background="#242424"
+            tools:ignore="MissingConstraints">
+
+            <ImageButton
+                android:id="@+id/home"
+                android:layout_width="84dp"
+                android:layout_height="wrap_content"
+                android:background="#242424"
+                android:contentDescription="@string/home"
+                app:srcCompat="@drawable/tku_3" />
+
+            <ImageButton
+                android:id="@+id/news"
+                android:layout_width="77dp"
+                android:layout_height="59dp"
+                android:background="#242424"
+                android:contentDescription="@string/news"
+                app:srcCompat="@drawable/tku_4" />
+
+            <ImageButton
+                android:id="@+id/tku"
+                android:layout_width="84dp"
+                android:layout_height="59dp"
+                android:background="#d1b06b"
+                android:contentDescription="@string/tku"
+                app:srcCompat="@drawable/tku_5" />
+
+            <ImageButton
+                android:id="@+id/sport"
+                android:layout_width="79dp"
+                android:layout_height="66dp"
+                android:background="#242424"
+                android:contentDescription="@string/sports"
+                app:srcCompat="@drawable/tku_6" />
+
+            <ImageButton
+                android:id="@+id/profile"
+                android:layout_width="75dp"
+                android:layout_height="63dp"
+                android:background="#242424"
+                android:contentDescription="@string/profile"
+                app:srcCompat="@drawable/tku_7" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
