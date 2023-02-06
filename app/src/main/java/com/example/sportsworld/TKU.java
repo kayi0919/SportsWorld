@@ -33,6 +33,18 @@ public class TKU extends AppCompatActivity {
             startActivity(intent);
         });
 
+        ImageButton nextPageSport = (ImageButton)findViewById(R.id.sport);
+        nextPageSport.setOnClickListener(v -> {
+            Intent intent = new Intent();
+            intent.setClass(TKU.this, sport.class);
+            startActivity(intent);
+        });
+        ImageButton nextPageProfile = (ImageButton)findViewById(R.id.profile);
+        nextPageProfile.setOnClickListener(v -> {
+            Intent intent = new Intent();
+            intent.setClass(TKU.this, profile.class);
+            startActivity(intent);
+        });
     }
 
 }

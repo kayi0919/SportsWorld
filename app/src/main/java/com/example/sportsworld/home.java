@@ -35,13 +35,13 @@ public class home extends AppCompatActivity {
         ImageButton nextPageSport = (ImageButton)findViewById(R.id.sport);
         nextPageSport.setOnClickListener(v -> {
             Intent intent = new Intent();
-            intent.setClass(home.this, TKU.class);
+            intent.setClass(home.this, sport.class);
             startActivity(intent);
         });
         ImageButton nextPageProfile = (ImageButton)findViewById(R.id.profile);
         nextPageProfile.setOnClickListener(v -> {
             Intent intent = new Intent();
-            intent.setClass(home.this, TKU.class);
+            intent.setClass(home.this, profile.class);
             startActivity(intent);
         });
     }
