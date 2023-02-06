@@ -14,8 +14,8 @@ public class start extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start);
 
-        Button nextPageBtn = findViewById(R.id.start);
-        nextPageBtn.setOnClickListener(v -> {
+        Button nextPageStart = findViewById(R.id.start);
+        nextPageStart.setOnClickListener(v -> {
             Intent intent = new Intent();
             intent.setClass(start.this, loading.class);
             startActivity(intent);

@@ -7,6 +7,23 @@
     tools:context=".home"
     android:background="#d1b06b">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:background="#d1b06b"
+        tools:ignore="MissingConstraints">
+
+    <ImageButton
+        android:id="@+id/set"
+        android:layout_width="84dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+
+        android:contentDescription="@string/home"
+        app:srcCompat="@drawable/home_1"  />
+    </LinearLayout>
     <ImageView
         android:id="@+id/home_1"
         android:layout_width="59dp"

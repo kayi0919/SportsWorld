@@ -8,19 +8,20 @@ import android.widget.Button;
 
 public class login extends AppCompatActivity{
     @Override
+    //TODO Database
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        Button nextPageBtn = (Button)findViewById(R.id.button_createacct);
-        nextPageBtn.setOnClickListener(v -> {
+        Button nextPageCreateAcct = (Button)findViewById(R.id.button_createacct);
+        nextPageCreateAcct.setOnClickListener(v -> {
             Intent intent = new Intent();
             intent.setClass(login.this, createacct.class);
             startActivity(intent);
         });
 
-        Button nextPageBtn1 = (Button)findViewById(R.id.button_login);
-        nextPageBtn1.setOnClickListener(v -> {
+        Button nextPageLogin = (Button)findViewById(R.id.button_login);
+        nextPageLogin.setOnClickListener(v -> {
             Intent intent = new Intent();
             intent.setClass(login.this, home.class);
             startActivity(intent);

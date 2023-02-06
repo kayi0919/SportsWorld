@@ -12,20 +12,34 @@ public class home extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        ImageButton nextPageBtn = (ImageButton)findViewById(R.id.news);
-        nextPageBtn.setOnClickListener(v -> {
+
+
+        ImageButton nextPageNews = (ImageButton)findViewById(R.id.news);
+        nextPageNews.setOnClickListener(v -> {
             Intent intent = new Intent();
             intent.setClass(home.this, news.class);
             startActivity(intent);
         });
-        ImageButton nextPageBtn2 = (ImageButton)findViewById(R.id.home);
-        nextPageBtn2.setOnClickListener(v -> {
+        ImageButton nextPageHome = (ImageButton)findViewById(R.id.home);
+        nextPageHome.setOnClickListener(v -> {
             Intent intent = new Intent();
             intent.setClass(home.this, home.class);
             startActivity(intent);
         });
-        ImageButton nextPageBtntku = (ImageButton)findViewById(R.id.tku);
-        nextPageBtntku.setOnClickListener(v -> {
+        ImageButton nextPageTku = (ImageButton)findViewById(R.id.tku);
+        nextPageTku.setOnClickListener(v -> {
+            Intent intent = new Intent();
+            intent.setClass(home.this, TKU.class);
+            startActivity(intent);
+        });
+        ImageButton nextPageSport = (ImageButton)findViewById(R.id.sport);
+        nextPageSport.setOnClickListener(v -> {
+            Intent intent = new Intent();
+            intent.setClass(home.this, TKU.class);
+            startActivity(intent);
+        });
+        ImageButton nextPageProfile = (ImageButton)findViewById(R.id.profile);
+        nextPageProfile.setOnClickListener(v -> {
             Intent intent = new Intent();
             intent.setClass(home.this, TKU.class);
             startActivity(intent);

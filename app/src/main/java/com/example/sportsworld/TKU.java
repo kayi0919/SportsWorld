@@ -12,22 +12,22 @@ public class TKU extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tku);
 
-        ImageButton nextPageBtnnews = (ImageButton)findViewById(R.id.news);
-        nextPageBtnnews.setOnClickListener(v -> {
+        ImageButton nextPageNews = (ImageButton)findViewById(R.id.news);
+        nextPageNews.setOnClickListener(v -> {
             Intent intent = new Intent();
             intent.setClass(TKU.this, news.class);
             startActivity(intent);
         });
 
-        ImageButton nextPageBtnhome = (ImageButton)findViewById(R.id.home);
-        nextPageBtnhome.setOnClickListener(v -> {
+        ImageButton nextPageHome = (ImageButton)findViewById(R.id.home);
+        nextPageHome.setOnClickListener(v -> {
             Intent intent = new Intent();
             intent.setClass(TKU.this, home.class);
             startActivity(intent);
         });
 
-        ImageButton nextPageBtntku = (ImageButton)findViewById(R.id.tku);
-        nextPageBtntku.setOnClickListener(v -> {
+        ImageButton nextPageTku = (ImageButton)findViewById(R.id.tku);
+        nextPageTku.setOnClickListener(v -> {
             Intent intent = new Intent();
             intent.setClass(TKU.this, TKU.class);
             startActivity(intent);

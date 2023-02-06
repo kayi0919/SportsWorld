@@ -191,7 +191,7 @@
                 android:layout_height="59dp"
                 android:background="#d1b06b"
                 android:contentDescription="@string/tku"
-                app:srcCompat="@drawable/tku_5" />
+                app:srcCompat="@drawable/tku_2" />
 
             <ImageButton
                 android:id="@+id/sport"
@@ -199,7 +199,7 @@
                 android:layout_height="66dp"
                 android:background="#242424"
                 android:contentDescription="@string/sports"
-                app:srcCompat="@drawable/tku_6" />
+                app:srcCompat="@drawable/tku_5" />
 
             <ImageButton
                 android:id="@+id/profile"
@@ -207,7 +207,7 @@
                 android:layout_height="63dp"
                 android:background="#242424"
                 android:contentDescription="@string/profile"
-                app:srcCompat="@drawable/tku_7" />
+                app:srcCompat="@drawable/tku_6" />
 
         </LinearLayout>
     </RelativeLayout>
