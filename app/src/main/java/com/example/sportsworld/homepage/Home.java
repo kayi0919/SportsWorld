@@ -39,5 +39,12 @@ public class Home extends AppCompatActivity {
             intent.setClass(Home.this, Repair.class);
             startActivity(intent);
         });
+
+        Button r_nextPageSetting = findViewById(R.id.h_setting);
+        r_nextPageRepair.setOnClickListener(v -> {
+            Intent intent = new Intent();
+            intent.setClass(Home.this, Setting.class);
+            startActivity(intent);
+        });
     }
 }
