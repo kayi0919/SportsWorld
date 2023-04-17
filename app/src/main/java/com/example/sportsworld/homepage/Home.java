@@ -33,8 +33,8 @@ public class Home extends AppCompatActivity {
         h_repair.setBackgroundColor(Color.GREEN);
         h_running.setBackgroundColor(Color.GREEN);
 
-        Button nextPageStart = findViewById(R.id.h_repair);
-        nextPageStart.setOnClickListener(v -> {
+        Button r_nextPageRepair = findViewById(R.id.h_repair);
+        r_nextPageRepair.setOnClickListener(v -> {
             Intent intent = new Intent();
             intent.setClass(Home.this, Repair.class);
             startActivity(intent);

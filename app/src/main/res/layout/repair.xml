@@ -6,6 +6,7 @@
     android:layout_height="match_parent">
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="404dp"
         android:layout_height="53dp"
         android:layout_marginStart="1dp"
@@ -59,4 +60,53 @@
         android:text="設定"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="423dp"
+        android:layout_height="259dp"
+        android:layout_marginTop="112dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/r_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="器材編號"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/r_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="器材狀況"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/r_other"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="其他"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/r_textViewResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="textViewResult"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/r_send"
+        android:layout_width="151dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginBottom="184dp"
+        android:text="送出"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
