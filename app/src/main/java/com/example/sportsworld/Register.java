@@ -78,18 +78,20 @@ public class Register extends AppCompatActivity {
                                 inputStream.close();
                                 final String result = box;
                                 runOnUiThread(new Runnable() {
+                                    //TODO 錯誤會出現亂碼
                                     @Override
                                     public void run() {
-                                        //TODO 註冊失敗也會換頁面
                                         textViewResult.setText(result);
-                                        new Handler().postDelayed(new Runnable() {
-                                            @Override
-                                            public void run() {
-                                                Intent intent = new Intent();
-                                                intent.setClass(Register.this, Login.class);
-                                                startActivity(intent);
-                                            }
-                                        }, 3000);
+                                        if (result.trim().equals("註冊成功！")) {
+                                            new Handler().postDelayed(new Runnable() {
+                                                @Override
+                                                public void run() {
+                                                    Intent intent = new Intent();
+                                                    intent.setClass(Register.this, Login.class);
+                                                    startActivity(intent);
+                                                }
+                                            }, 3000);
+                                        }
                                     }
                                 });
                             } else {

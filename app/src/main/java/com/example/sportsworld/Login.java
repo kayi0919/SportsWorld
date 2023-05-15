@@ -85,20 +85,22 @@ public class Login extends AppCompatActivity{
                                 inputStream.close();
                                 final String result = box;
                                 runOnUiThread(new Runnable() {
-                                    //TODO 註冊失敗也會換頁面
                                     @Override
                                     public void run() {
                                         textViewResult.setText(result);
-                                        new Handler().postDelayed(new Runnable() {
-                                            @Override
-                                            public void run() {
-                                                Intent intent = new Intent();
-                                                intent.setClass(Login.this, Home.class);
-                                                startActivity(intent);
-                                            }
-                                        }, 3000);
+                                        if (result.trim().equals("登入成功 3秒後切換進入主頁")) {
+                                            // 登入成功時切換頁面
+                                            new Handler().postDelayed(new Runnable() {
+                                                @Override
+                                                public void run() {
+                                                    Intent intent = new Intent(Login.this, Home.class);
+                                                    startActivity(intent);
+                                                }
+                                            }, 3000);
+                                        }
                                     }
                                 });
+
                             } else {
                                 throw new Exception("HTTP response code: " + responseCode);
                             }
